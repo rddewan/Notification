@@ -1,0 +1,36 @@
+package com.richarddewan.notificationapp.util
+
+object AppConstant {
+
+    const val NOTIFICATION_DEFAULT_CHANNEL_ID = "dn01"
+    const val NOTIFICATION_DEFAULT_ID = 1001
+    const val NOTIFICATION_HIGH_CHANNEL_ID = "dn02"
+    const val NOTIFICATION_HIGH_ID = 1002
+    const val NOTIFICATION_LOW_CHANNEL_ID = "dn03"
+    const val NOTIFICATION_LOW_ID = 1003
+
+    const val NOTIFICATION_ACTION_CHANNEL_ID = "dn04"
+    const val NOTIFICATION_ACTION_ID = 1004
+
+    const val NOTIFICATION_CONTENT_INTENT_CHANNEL_ID = "dn05"
+    const val NOTIFICATION_CONTENT_INTENT_ID = 1005
+
+    const val NOTIFICATION_CUSTOM_SOUND_CHANNEL_ID = "dn06"
+    const val NOTIFICATION_CUSTOM_SOUND_ID = 1006
+
+    const val NOTIFICATION_BIG_TEXT_CHANNEL_ID = "dn07"
+    const val NOTIFICATION_BIG_TEXT_ID = 1007
+
+    const val NOTIFICATION_INBOX_CHANNEL_ID = "dn08"
+    const val NOTIFICATION_INBOX_TEXT_ID = 1008
+
+    const val NOTIFICATION_BIG_PICTURE_CHANNEL_ID = "dn09"
+    const val NOTIFICATION_BIG_PICTURE_TEXT_ID = 1009
+
+    const val NOTIFICATION_DOWNLOADING_CHANNEL_ID = "dn10"
+    const val NOTIFICATION_DOWNLOADING_ID = 10010
+
+
+
+
+}
