@@ -11,9 +11,17 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.NotificationApp">
         <receiver
-            android:name=".receiver.AddToCartReceiver"
+            android:name=".receiver.CustomNotificationReceiver"
             android:enabled="true"
             android:exported="false"></receiver>
+        <receiver
+            android:name=".receiver.MessageReceiver"
+            android:enabled="true"
+            android:exported="false" />
+        <receiver
+            android:name=".receiver.AddToCartReceiver"
+            android:enabled="true"
+            android:exported="false" />
         <receiver
             android:name=".reciever.AddToCartReceiver"
             android:enabled="true"

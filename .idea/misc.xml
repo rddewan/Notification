@@ -4,6 +4,10 @@
     <option name="filePathToZoomLevelMap">
       <map>
         <entry key="..\:/AndroidUdemyCourse/Notification/NotificationApp/app/src/main/res/layout/activity_main.xml" value="0.35989583333333336" />
+        <entry key="..\:/AndroidUdemyCourse/Notification/NotificationApp/app/src/main/res/layout/collaps_notfication_view.xml" value="0.35989583333333336" />
+        <entry key="..\:/AndroidUdemyCourse/Notification/NotificationApp/app/src/main/res/layout/collapse_notification_view.xml" value="0.35989583333333336" />
+        <entry key="..\:/AndroidUdemyCourse/Notification/NotificationApp/app/src/main/res/layout/expanded_notifcation_view.xml" value="0.35989583333333336" />
+        <entry key="..\:/AndroidUdemyCourse/Notification/NotificationApp/app/src/main/res/layout/expanded_notification_view.xml" value="0.35989583333333336" />
       </map>
     </option>
   </component>

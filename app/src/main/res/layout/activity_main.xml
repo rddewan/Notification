@@ -133,6 +133,48 @@
                 android:layout_marginRight="8dp"
                 android:text="Downloading Style Notification" />
 
+            <Button
+                android:id="@+id/btnMessageStyleNotification"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="8dp"
+                android:layout_marginRight="8dp"
+                android:text="Messaging Style Notification" />
+
+            <Button
+                android:id="@+id/btnMediaStyleNotification"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="8dp"
+                android:layout_marginRight="8dp"
+                android:text="Media Style Notification" />
+
+            <Button
+                android:id="@+id/btnCustomStyleNotification"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="8dp"
+                android:layout_marginRight="8dp"
+                android:text="Custom Style Notification" />
+
+            <Button
+                android:id="@+id/btnDeleteNotification"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="8dp"
+                android:layout_marginRight="8dp"
+                android:text="Delete Notification Channel" />
+
+            <Button
+                android:id="@+id/btnDeleteNotificationGroup"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="8dp"
+                android:layout_marginRight="8dp"
+                android:text="Delete Notification Channel Group" />
+
+
+
 
         </LinearLayout>
     </ScrollView>

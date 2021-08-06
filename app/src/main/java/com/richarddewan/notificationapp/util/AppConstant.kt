@@ -30,6 +30,19 @@ object AppConstant {
     const val NOTIFICATION_DOWNLOADING_CHANNEL_ID = "dn10"
     const val NOTIFICATION_DOWNLOADING_ID = 10010
 
+    const val NOTIFICATION_MESSAGE_CHANNEL_ID = "dn11"
+    const val NOTIFICATION_MESSAGE_ID = 10011
+
+    const val NOTIFICATION_MEDIA_CHANNEL_ID = "dn12"
+    const val NOTIFICATION_MEDIA_ID = 10012
+
+    const val NOTIFICATION_CUSTOM_CHANNEL_ID = "dn13"
+    const val NOTIFICATION_CUSTOM_ID = 10013
+
+    const val GROUP_1_ID = "group_01"
+    const val GROUP_2_ID = "group_02"
+    const val GROUP_1_NAME = "Private Group"
+    const val GROUP_2_NAME = "Public Group"
 
 
 

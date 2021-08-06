@@ -2,22 +2,27 @@ package com.richarddewan.notificationapp
 
 import android.app.Application
 import android.app.NotificationChannel
+import android.app.NotificationChannelGroup
 import android.app.NotificationManager
 import android.content.Context
 import android.graphics.Color
 import android.media.AudioAttributes
 import android.net.Uri
 import android.os.Build
+import com.richarddewan.notificationapp.util.AppConstant
 import com.richarddewan.notificationapp.util.AppConstant.NOTIFICATION_ACTION_CHANNEL_ID
 import com.richarddewan.notificationapp.util.AppConstant.NOTIFICATION_BIG_PICTURE_CHANNEL_ID
 import com.richarddewan.notificationapp.util.AppConstant.NOTIFICATION_BIG_TEXT_CHANNEL_ID
 import com.richarddewan.notificationapp.util.AppConstant.NOTIFICATION_CONTENT_INTENT_CHANNEL_ID
+import com.richarddewan.notificationapp.util.AppConstant.NOTIFICATION_CUSTOM_CHANNEL_ID
 import com.richarddewan.notificationapp.util.AppConstant.NOTIFICATION_CUSTOM_SOUND_CHANNEL_ID
 import com.richarddewan.notificationapp.util.AppConstant.NOTIFICATION_DEFAULT_CHANNEL_ID
 import com.richarddewan.notificationapp.util.AppConstant.NOTIFICATION_DOWNLOADING_CHANNEL_ID
 import com.richarddewan.notificationapp.util.AppConstant.NOTIFICATION_HIGH_CHANNEL_ID
 import com.richarddewan.notificationapp.util.AppConstant.NOTIFICATION_INBOX_CHANNEL_ID
 import com.richarddewan.notificationapp.util.AppConstant.NOTIFICATION_LOW_CHANNEL_ID
+import com.richarddewan.notificationapp.util.AppConstant.NOTIFICATION_MEDIA_CHANNEL_ID
+import com.richarddewan.notificationapp.util.AppConstant.NOTIFICATION_MESSAGE_CHANNEL_ID
 
 
 /*
@@ -149,12 +154,47 @@ class NotificationApp : Application() {
                 NotificationManager.IMPORTANCE_HIGH
             ).apply {
                 description = "This is a downloading  style notification channel"
+                group = AppConstant.GROUP_1_ID
+            }
+
+            val messagingStyleNotification = NotificationChannel(
+                NOTIFICATION_MESSAGE_CHANNEL_ID,
+                "Messaging Style Notification Channel",
+                NotificationManager.IMPORTANCE_HIGH
+            ).apply {
+                description = "This is a messaging  style notification channel"
+                group = AppConstant.GROUP_1_ID
+            }
+
+            val mediaStyleNotification = NotificationChannel(
+                NOTIFICATION_MEDIA_CHANNEL_ID,
+                "Media Style Notification Channel",
+                NotificationManager.IMPORTANCE_HIGH
+            ).apply {
+                description = "This is a media style notification channel"
+                group = AppConstant.GROUP_2_ID
+            }
+
+            val customStyleNotification = NotificationChannel(
+                NOTIFICATION_CUSTOM_CHANNEL_ID,
+                "Custom Style Notification Channel",
+                NotificationManager.IMPORTANCE_HIGH
+            ).apply {
+                description = "This is a custom style notification channel"
+                group = AppConstant.GROUP_2_ID
 
             }
 
 
-
             val notificationManager = getSystemService(NotificationManager::class.java)
+
+            //create notification channel group
+            notificationManager.createNotificationChannelGroup(
+                NotificationChannelGroup(AppConstant.GROUP_1_ID, AppConstant.GROUP_1_NAME)
+            )
+            notificationManager.createNotificationChannelGroup(
+                NotificationChannelGroup(AppConstant.GROUP_2_ID, AppConstant.GROUP_2_NAME)
+            )
 
             notificationManager.createNotificationChannels(
                 listOf(
@@ -167,8 +207,10 @@ class NotificationApp : Application() {
                     bigTextStyleNotification,
                     inboxStyleNotification,
                     bigPictureStyleNotification,
-                    downloadingStyleNotification
-
+                    downloadingStyleNotification,
+                    messagingStyleNotification,
+                    mediaStyleNotification,
+                    customStyleNotification,
                     )
             )
 
